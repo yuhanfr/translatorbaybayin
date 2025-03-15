@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baybayin Translator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px gray;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .translator {
+            flex: 1;
+        }
+        .profile {
+            flex: 1;
+            text-align: left;
+            padding-left: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            font-size: 18px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        #output {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            padding: 10px;
+            background: #ddd;
+            min-height: 50px;
+            border-radius: 5px;
+        }
+        img {
+            width: 150px;
+            border-radius: 10px;
+        }
+        .qr {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Baybayin Translator</h2>
+    <div class="container">
+        <div class="translator">
+            <textarea id="inputText" rows="4" placeholder="Enter text..."></textarea><br>
+            <button onclick="translateToBaybayin()">Translate</button>
+            <div id="output"></div>
+        </div>
+        <div class="profile">
+            <img src="480710349_599338053084707_7990638582783657045_n.jpg" alt="Profile Picture">
+            <p><strong>© 2025 Baybayin Translator</strong></p>
+            <p>Johnloyd Furio</p>
+            <p>BSIT 2-C</p>
+            <p>Panitikang Pilipino</p>
+            <img class="qr" src="qr_code.png" alt="QR Code">
+        </div>
+    </div>
+    <div class="container">
+        <h3>FAQs on Baybayin</h3>
+        <ul>
+            <li>Anong mga wika ang maaaring isalin sa Baybayin?</li>
+            <li>Maaari bang isalin ang lahat ng modernong salita sa Baybayin?</li>
+            <li>Ano ang pagkakaiba ng Baybayin at Alibata?</li>
+            <li>Maaari bang i-represent ng Baybayin ang lahat ng tunog sa modernong Filipino?</li>
+            <li>Paano pinapanatili ang Baybayin ngayon?</li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
